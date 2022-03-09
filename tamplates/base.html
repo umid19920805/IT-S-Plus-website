@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="manifest" href="site.webmanifest">
-    <link rel="shortcut icon" type="image/x-icon" href="/static/assets/img/2.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/2.ico">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
@@ -50,7 +50,7 @@
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-xl-2 col-lg-2 col-5">
-                        <div class="logo"><a href="{% url 'index'%}"><img src="/static/assets/img/last logo.png" alt=""></a></div>
+                        <div class="logo"><a href="{% url 'index'%}"><img src="{% static 'assets/img/last logo.png'%}" alt=""></a></div>
                     </div>
                     <div class="col-xl-7 col-lg-8 d-none d-lg-block">
                         <nav class="main-menu navbar navbar-expand-lg justify-content-center">
@@ -62,14 +62,14 @@
                                             All Categories 
                                             </a>
                                             <ul class="dropdown-menu submenu mega-menu__sub-menu-box" aria-labelledby="navbarDropdown">
-                                                <li><a href="{% url 'index'%}"><span><img src="/static/assets/img/icon/icon7.svg" alt=""></span> Biznes</a></li>
-                                                <li><a href="{% url 'index2'%}"><span><img src="/static/assets/img/icon/icon8.svg" alt=""></span> Technology</a></li>
-                                                <li><a href="{% url 'index'%}"><span><img src="/static/assets/img/icon/icon9.svg" alt=""></span> Development</a></li>
-                                                <li><a href="{% url 'index2'%}"><span><img src="/static/assets/img/icon/icon10.svg" alt=""></span> Photography</a></li>
-                                                <li><a href="{% url 'index'%}"><span><img src="/static/assets/img/icon/icon11.svg" alt=""></span> Digital Marketing</a></li>
-                                                <li><a href="{% url 'index2'%}"><span><img src="/static/assets/img/icon/icon12.svg" alt=""></span> Programming</a></li>
-                                                <li><a href="{% url 'index'%}"><span><img src="/static/assets/img/icon/icon14.svg" alt=""></span> Videograpgy</a></li>
-                                                <li><a href="{% url 'index2'%}"><span><img src="/static/assets/img/icon/icon13.svg" alt=""></span> Illustration</a></li>
+                                                <li><a href="{% url 'index'%}"><span><img src="{% static 'assets/img/icon/icon7.svg'%}" alt=""></span> Biznes</a></li>
+                                                <li><a href="{% url 'index2'%}"><span><img src="{% static 'assets/img/icon/icon8.svg'%}" alt=""></span> Technology</a></li>
+                                                <li><a href="{% url 'index'%}"><span><img src="{% static 'assets/img/icon/icon9.svg'%}" alt=""></span> Development</a></li>
+                                                <li><a href="{% url 'index2'%}"><span><img src="{% static 'assets/img/icon/icon10.svg'%}" alt=""></span> Photography</a></li>
+                                                <li><a href="{% url 'index'%}"><span><img src="{% static 'assets/img/icon/icon11.svg'%}" alt=""></span> Digital Marketing</a></li>
+                                                <li><a href="{% url 'index2'%}"><span><img src="{% static 'assets/img/icon/icon12.svg'%}" alt=""></span> Programming</a></li>
+                                                <li><a href="{% url 'index'%}"><span><img src="{% static 'assets/img/icon/icon14.svg'%}" alt=""></span> Videograpgy</a></li>
+                                                <li><a href="{% url 'index2'%}"><span><img src="{% static 'assets/img/icon/icon13.svg'%}" alt=""></span> Illustration</a></li>
                                             </ul>
                                         </li>
                                         <li class="nav-item dropdown active">
@@ -116,7 +116,7 @@
                             <div class="right-btn mr-25 mr-xs-15">
                                 <ul class="d-flex align-items-center">
                                     <li><a href="{% url 'contact'%}" class="theme_btn free_btn">Try Free Now</a></li>
-                                    <li><a class="sign-in ml-20" href="{% url 'login'%}"><img src="/static/assets/img/icon/user.svg" alt=""></a></li>
+                                    <li><a class="sign-in ml-20" href="{% url 'login'%}"><img src="{% static 'assets/img/icon/user.svg'%}" alt=""></a></li>
                                 </ul>
                             </div>
                             <div class="hamburger-menu d-md-inline-block d-lg-none text-right">
@@ -140,7 +140,7 @@
                     <div class="footer__widget mb-30">
                         <div class="footer-log mb-20">
                             <a href="{% url 'index'%}" class="logo">
-                                <img src="/static/assets/img/logo/header_logo_one.svg" alt="">
+                                <img src="{% static 'assets/img/logo/header_logo_one.svg'%}" alt="">
                             </a>
                         </div>
                         <p>Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed di nonumy eirmod temporinvi dunt ut labore lorem ipsum.</p>
