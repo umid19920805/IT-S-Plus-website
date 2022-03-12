@@ -11,9 +11,23 @@ def index2(request):
 
     return render(request, 'index-2.html')
 
-def about(request):
 
-    return render(request, 'about.html')
+
+######_____START________##########---About-US (Biz haqimizda)---######################
+def about(request):
+    about1 = Biz_Haqimizda_background_tagi.objects.all()
+
+
+    context = {
+        'usabout' : about1,
+
+    }
+
+    return render(request, 'about.html', context)
+######_____END________##########---About-US (Biz haqimizda)---########################
+
+
+
 
 def blogdetails(request):
 
