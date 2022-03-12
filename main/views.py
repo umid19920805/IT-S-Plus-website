@@ -16,10 +16,23 @@ def index2(request):
 ######_____START________##########---About-US (Biz haqimizda)---######################
 def about(request):
     about1 = Biz_Haqimizda_background_tagi.objects.all()
+    about2 = Biz_Haqimizda_background_tagi2.objects.all()
+    about3 = Biz_Haqimizda_asosiy_rasmlari.objects.all()
+    about4 = Biz_Haqimizda_asosiy_rasm_matnlari.objects.all()
+    about5 = Biz_Haqimizda_statiskalar_tagi.objects.all()
+    about6 = Biz_Haqimizda_pastdagi_asosiy_rasmlar.objects.all()
+    
+
 
 
     context = {
         'usabout' : about1,
+        'usabout2' : about2,
+        'usabout3' : about3,
+        'usabout4' : about4,
+        'usabout5' : about5,
+        'usabout6' : about6,
+
 
     }
 
