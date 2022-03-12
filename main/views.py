@@ -21,7 +21,9 @@ def about(request):
     about4 = Biz_Haqimizda_asosiy_rasm_matnlari.objects.all()
     about5 = Biz_Haqimizda_statiskalar_tagi.objects.all()
     about6 = Biz_Haqimizda_pastdagi_asosiy_rasmlar.objects.all()
+    about7 = Biz_Haqimizda_pastdagi_asosiy_rasmlar_matni.objects.all()
     
+
 
 
 
@@ -32,6 +34,7 @@ def about(request):
         'usabout4' : about4,
         'usabout5' : about5,
         'usabout6' : about6,
+        'usabout7' : about7,
 
 
     }

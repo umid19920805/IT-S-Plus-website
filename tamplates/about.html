@@ -395,12 +395,14 @@
             <section class="course-instructor nav-style-two f-round-bg pt-150 pb-120 pt-md-95 pt-xs-95">
                 <div class="container">
                     <div class="row">
+                        {% for about7 in usabout7 %}
                         <div class="col-xl-8 col-lg-9">
                             <div class="section-title text-center text-md-start mb-60">
-                                <h5 class="bottom-line mb-25">Our Instructor</h5>
-                                <h2 class="mb-25">Explore Experienced Instructor</h2>
+                                <h5 class="bottom-line mb-25">{{about7.asosiy_matn}}</h5>
+                                <h2 class="mb-25">{{about7.asosiy_izoh}}</h2>
                             </div>
                         </div>
+                        {% endfor %}
                     </div>
                     <div class="instructor-active owl-carousel">
                         {% for about6 in usabout6 %}
@@ -409,10 +411,10 @@
                                 <div class="z-instructors__thumb mb-15">
                                     <img src="{{about6.rasm_305x350.url}}" alt="">
                                     <div class="social-media">
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                        <a href="#"><i class="fab fa-youtube"></i></a>
+                                        <a href="{{about6.telegram_url}}"><i class="fab fa-telegram"></i></a>
+                                        <a href="{{about6.instagram_url}}"><i class="fab fa-instagram"></i></a>
+                                        <a href="{{about6.facebook_url}}"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="{{about6.youtube_url}}"><i class="fab fa-youtube"></i></a>
                                     </div>
                                 </div>
                                 <div class="z-instructors__content">
