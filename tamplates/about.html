@@ -6,13 +6,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Zoomy - E-learning HTML5 Template</title>
-    <meta name="keywords" content="online education, e-learning, coaching, education, teaching, learning">
-    <meta name="description" content="Zoomy is a e-learnibg HTML template for all kinds of education, coaching, online education website">
+    <title>It solution plus</title>
+    <meta name="keywords" content="It solution plus : Automation & Fintech services">
+    <meta name="description" content="It solution plus biznesingiz uchun inavatsion yechimlar biz bilan biznesingizni avtomatlashtiring">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="manifest" href="site.webmanifest">
-    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/favicon.png' %}">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
@@ -50,7 +50,7 @@
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-xl-2 col-lg-2 col-5">
-                        <div class="logo"><a href="index.html"><img src="{% static 'assets/img/logo/header_logo_one.svg" alt=""></a></div>
+                        <div class="logo"><a href="index.html"><img src="{% static 'assets/img/last logo.png'%}" alt=""></a></div>
                     </div>
                     <div class="col-xl-7 col-lg-8 d-none d-lg-block">
                         <nav class="main-menu navbar navbar-expand-lg justify-content-center">
@@ -62,14 +62,14 @@
                                             All Categories 
                                             </a>
                                             <ul class="dropdown-menu submenu mega-menu__sub-menu-box" aria-labelledby="navbarDropdown">
-                                                <li><a href="index.html"><span><img src="{% static 'assets/img/icon/icon7.svg" alt=""></span> Business</a></li>
-                                                <li><a href="index-2.html"><span><img src="{% static 'assets/img/icon/icon8.svg" alt=""></span> Technology</a></li>
-                                                <li><a href="index.html"><span><img src="{% static 'assets/img/icon/icon9.svg" alt=""></span> Development</a></li>
-                                                <li><a href="index-2.html"><span><img src="{% static 'assets/img/icon/icon10.svg" alt=""></span> Photography</a></li>
-                                                <li><a href="index.html"><span><img src="{% static 'assets/img/icon/icon11.svg" alt=""></span> Digital Marketing</a></li>
-                                                <li><a href="index-2.html"><span><img src="{% static 'assets/img/icon/icon12.svg" alt=""></span> Programming</a></li>
-                                                <li><a href="index.html"><span><img src="{% static 'assets/img/icon/icon14.svg" alt=""></span> Videograpgy</a></li>
-                                                <li><a href="index-2.html"><span><img src="{% static 'assets/img/icon/icon13.svg" alt=""></span> Illustration</a></li>
+                                                <li><a href="index.html"><span><img src="{% static 'assets/img/icon/icon7.svg' %}" alt=""></span> Business</a></li>
+                                                <li><a href="index-2.html"><span><img src="{% static 'assets/img/icon/icon8.svg' %}" alt=""></span> Technology</a></li>
+                                                <li><a href="index.html"><span><img src="{% static 'assets/img/icon/icon9.svg' %}" alt=""></span> Development</a></li>
+                                                <li><a href="index-2.html"><span><img src="{% static 'assets/img/icon/icon10.svg' %}" alt=""></span> Photography</a></li>
+                                                <li><a href="index.html"><span><img src="{% static 'assets/img/icon/icon11.svg' %}" alt=""></span> Digital Marketing</a></li>
+                                                <li><a href="index-2.html"><span><img src="{% static 'assets/img/icon/icon12.svg' %}" alt=""></span> Programming</a></li>
+                                                <li><a href="index.html"><span><img src="{% static 'assets/img/icon/icon14.svg' %}" alt=""></span> Videograpgy</a></li>
+                                                <li><a href="index-2.html"><span><img src="{% static 'assets/img/icon/icon13.svg' %}" alt=""></span> Illustration</a></li>
                                             </ul>
                                         </li>
                                         <li class="nav-item dropdown">
@@ -177,7 +177,7 @@
                         <li><a href="index-3.html">Home Style 3</a></li>
                     </ul>
                 </li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html">Biz Haqimizda</a></li>
                 <li class="has-dropdown">
                     <a href="#">Pages</a>
                     <ul class="sub-menu">
@@ -208,7 +208,7 @@
 
     <main>
      <!--page-title-area start-->
-      <section class="page-title-area d-flex align-items-end" style="background-image: url({% static 'assets/img/page-title-bg/01.jpg);">
+      <section class="page-title-area d-flex align-items-end" style="background-image: url({% static 'assets/img/page-title-bg/01.jpg' %});">
           <div class="container">
               <div class="row align-items-end">
                   <div class="col-lg-12">
@@ -231,26 +231,30 @@
            <div class="container">
                <div class="row justify-content-lg-center justify-content-start">
                    <div class="col-xl-3 col-lg-8">
+                       {% for about1 in usabout %}
                        <div class="deal-box mb-30 text-center text-xl-start">
-                           <h2 class="mb-20"><b>Great</b> Deals For You</h2>
-                           <p>There are many variations of passa of Lorem Ipsum available, but the majority have suffered.</p>
+                           <h2 class="mb-20">{{about1.text}}</h2>
+                           <p>{{about1.izoh}}</p>
                        </div>
+                        {% endfor %}
                    </div>
                    <div class="col-xl-8">
                        <div class="deal-active owl-carousel mb-30">
+                           {% for about2 in usabout2 %}
                             <div class="single-item">
                                 <div class="single-box mb-30">
                                     <div class="single-box__icon mb-25">
-                                        <img src="{% static 'assets/img/icon/puzzle.svg" alt="">
+                                        <img src="{{ about2.rasm.url }}" alt="">
                                     </div>
-                                    <h4 class="sub-title mb-20">Learn New Skills</h4>
-                                    <p>There are many variations of pas of Lorm Ipsum available.</p>
+                                    <h4 class="sub-title mb-20">{{about2.text}}</h4>
+                                    <p>{{about2.izoh}}</p>
                                 </div>
                             </div>
-                            <div class="single-item">
+                            {% endfor %}
+                            <!-- <div class="single-item">
                                 <div class="single-box s-box2 mb-30">
                                     <div class="single-box__icon mb-25">
-                                        <img src="{% static 'assets/img/icon/manager.svg" alt="">
+                                        <img src="{% static 'assets/img/icon/manager.svg' %}" alt="">
                                     </div>
                                     <h4 class="sub-title mb-20">Expert Trainers</h4>
                                     <p>There are many variations of pas of Lorm Ipsum available.</p>
@@ -259,7 +263,7 @@
                             <div class="single-item">
                                 <div class="single-box s-box3 mb-30">
                                     <div class="single-box__icon mb-25">
-                                        <img src="{% static 'assets/img/icon/notepad.svg" alt="">
+                                        <img src="{% static 'assets/img/icon/notepad.svg' %}" alt="">
                                     </div>
                                     <h4 class="sub-title mb-20">Free Trial Lesson</h4>
                                     <p>There are many variations of pas of Lorm Ipsum available.</p>
@@ -268,7 +272,7 @@
                             <div class="single-item">
                                 <div class="single-box mb-30">
                                     <div class="single-box__icon mb-25">
-                                        <img src="{% static 'assets/img/icon/puzzle.svg" alt="">
+                                        <img src="{% static 'assets/img/icon/puzzle.svg' %}" alt="">
                                     </div>
                                     <h4 class="sub-title mb-20">Learn New Skills</h4>
                                     <p>There are many variations of pas of Lorm Ipsum available.</p>
@@ -277,12 +281,12 @@
                             <div class="single-item">
                                 <div class="single-box s-box2 mb-30">
                                     <div class="single-box__icon mb-25">
-                                        <img src="{% static 'assets/img/icon/manager.svg" alt="">
+                                        <img src="{% static 'assets/img/icon/manager.svg' %}" alt="">
                                     </div>
                                     <h4 class="sub-title mb-20">Expert Trainers</h4>
                                     <p>There are many variations of pas of Lorm Ipsum available.</p>
                                 </div>
-                            </div>
+                            </div> -->
                        </div>
                    </div>
                </div>
@@ -293,23 +297,27 @@
       <section class="about-us-area pt-150 pb-120 pt-md-100 pb-md-70 pt-xs-100 pb-xs-70">
           <div class="container">
               <div class="row align-items-center mb-120">
+                  {% for about3 in usabout3 %}
                  <div class="col-lg-7">
                      <div class="about__img__box mb-60">
-                        <img class="about-main-thumb pl-110" src="{% static 'assets/img/slider/01.png" alt="about-img">
-                        <img class="about-img about_01" src="{% static 'assets/img/about/01.png" alt="about-img">
-                        <img class="about-img about_02" src="{% static 'assets/img/about/02.png" alt="about-img">
-                        <img class="about-img about_03" src="{% static 'assets/img/slider/earth-bg.svg" alt="about-img">
+                        <img class="about-main-thumb pl-110" src="{{ about3.rasm_521x651.url }}" alt="about-img">
+                        <img class="about-img about_01" src="{{ about3.rasm2_250x250.url }}" alt="about-img">
+                        <img class="about-img about_02" src="{{ about3.rasm3_250x250.url }}" alt="about-img">
+                        <img class="about-img about_03" src="{{ about4.rasm4_250x250.url }}" alt="about-img">
                     </div>
                  </div>
+                 {% endfor %}
                  <div class="col-lg-5">
+                     {% for about4 in usabout4 %}
                      <div class="about-wrapper">
                          <div class="section-title section-title-4 mb-60">
-                            <h5 class="bottom-line mb-25">About Us</h5>
-                            <h2 class="mb-20">The act or experience of one that learns a computer program that makes learning fun</h2>
-                            <p class="mb-20">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy eirmod tempor invidunt ut labore et dolore magn aliq erat.</p>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy eirmod tempor invidunt ut labore et dolore magn aliq erat.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy.</p>
+                            <h5 class="bottom-line mb-25">{{about4.sarlavxa}}</h5>
+                            <h2 class="mb-20">{{about4.text}}</h2>
+                            <p class="mb-20">{{about4.izoh1}}</p>
+                            <p>{{ about4.izoh2 }}</p>
                         </div>
                      </div>
+                     {% endfor %}
                  </div>
               </div>
               <div class="row pl-75 pr-75 pr-lg-0 pr-md-0 pr-xs-0 pl-lg-0 pl-md-0 pl-xs-0">
@@ -348,11 +356,12 @@
             <!--what-loking-for start-->
             <section class="what-looking-for pt-145 pb-130 pt-md-95 pb-md-80 pt-xs-95 pb-xs-80">
                     <div class="container">
+                        {% for about5 in usabout5 %}
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="section-title text-center mb-55">
-                                    <h5 class="bottom-line mb-25">Teachers & Students</h5>
-                                    <h2>What you Looking For?</h2>
+                                    <h5 class="bottom-line mb-25">{{about5.sarlavxa}}</h5>
+                                    <h2>{{about5.matn}}</h2>
                                 </div>
                             </div>
                         </div>
@@ -360,24 +369,25 @@
                             <div class="col-xl-6 col-lg-6 col-md-6">
                                 <div class="what-box text-center mb-3">
                                     <div class="what-box__icon mb-30">
-                                        <img src="{% static 'assets/img/icon/phone-operator.svg" alt="">
+                                        <img src="{{about5.rasm_84x100.url}}" alt="">
                                     </div>
-                                    <h3>Do you want to teach here?</h3>
-                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy eirmod tempor invidunt ut labore et dolore magn aliq erat.</p>
-                                    <a href="contact.html" class="theme_btn border_btn">Register Now</a>
+                                    <h3>{{about5.rasm_matni}}</h3>
+                                    <p>{{about5.rasm_izohi}}</p>
+                                    <a href="contact.html" class="theme_btn border_btn">???</a>
                                 </div>
                             </div>
-                            <div class="col-xl-6 col-lg-6 col-md-6">
+                            <!-- <div class="col-xl-6 col-lg-6 col-md-6">
                                 <div class="what-box text-center mb-3">
                                     <div class="what-box__icon mb-30">
-                                        <img src="{% static 'assets/img/icon/graduate.svg" alt="">
+                                        <img src="{% static 'assets/img/icon/graduate.svg' %}" alt="">
                                     </div>
                                     <h3>Do you want to learn here?</h3>
                                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy eirmod tempor invidunt ut labore et dolore magn aliq erat.</p>
                                     <a href="contact.html" class="theme_btn border_btn active">Register Now</a>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
+                        {% endfor %}
                     </div>
             </section>
             <!--what-loking-for end-->
@@ -385,35 +395,39 @@
             <section class="course-instructor nav-style-two f-round-bg pt-150 pb-120 pt-md-95 pt-xs-95">
                 <div class="container">
                     <div class="row">
+                        {% for about7 in usabout7 %}
                         <div class="col-xl-8 col-lg-9">
                             <div class="section-title text-center text-md-start mb-60">
-                                <h5 class="bottom-line mb-25">Our Instructor</h5>
-                                <h2 class="mb-25">Explore Experienced Instructor</h2>
+                                <h5 class="bottom-line mb-25">{{about7.asosiy_matn}}</h5>
+                                <h2 class="mb-25">{{about7.asosiy_izoh}}</h2>
                             </div>
                         </div>
+                        {% endfor %}
                     </div>
                     <div class="instructor-active owl-carousel">
+                        {% for about6 in usabout6 %}
                         <div class="item">
                             <div class="z-instructors text-center mb-30">
                                 <div class="z-instructors__thumb mb-15">
-                                    <img src="{% static 'assets/img/instructor/01.jpg" alt="">
+                                    <img src="{{about6.rasm_305x350.url}}" alt="">
                                     <div class="social-media">
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                        <a href="#"><i class="fab fa-youtube"></i></a>
+                                        <a href="{{about6.telegram_url}}"><i class="fab fa-telegram"></i></a>
+                                        <a href="{{about6.instagram_url}}"><i class="fab fa-instagram"></i></a>
+                                        <a href="{{about6.facebook_url}}"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="{{about6.youtube_url}}"><i class="fab fa-youtube"></i></a>
                                     </div>
                                 </div>
                                 <div class="z-instructors__content">
-                                    <h4 class="sub-title mb-10"><a href="instructor-profile.html">John Zlathan</a></h4>
-                                    <p>Software Development</p>
+                                    <h4 class="sub-title mb-10"><a href="instructor-profile.html">{{about6.matn}}</a></h4>
+                                    <p>{{about6.izoh}}</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
+                        {% endfor %}
+                        <!-- <div class="item">
                             <div class="z-instructors text-center mb-30">
                                 <div class="z-instructors__thumb mb-15">
-                                    <img src="{% static 'assets/img/instructor/02.jpg" alt="">
+                                    <img src="{% static 'assets/img/instructor/02.jpg' %}" alt="">
                                     <div class="social-media">
                                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -430,7 +444,7 @@
                         <div class="item">
                             <div class="z-instructors text-center mb-30">
                                 <div class="z-instructors__thumb mb-15">
-                                    <img src="{% static 'assets/img/instructor/03.jpg" alt="">
+                                    <img src="{% static 'assets/img/instructor/03.jpg' %}" alt="">
                                     <div class="social-media">
                                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -447,7 +461,7 @@
                         <div class="item">
                             <div class="z-instructors text-center mb-30">
                                 <div class="z-instructors__thumb mb-15">
-                                    <img src="{% static 'assets/img/instructor/04.jpg" alt="">
+                                    <img src="{% static 'assets/img/instructor/04.jpg' %}" alt="">
                                     <div class="social-media">
                                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -464,7 +478,7 @@
                         <div class="item">
                             <div class="z-instructors text-center mb-30">
                                 <div class="z-instructors__thumb mb-15">
-                                    <img src="{% static 'assets/img/instructor/01.jpg" alt="">
+                                    <img src="{% static 'assets/img/instructor/01.jpg' %}" alt="">
                                     <div class="social-media">
                                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -481,7 +495,7 @@
                         <div class="item">
                             <div class="z-instructors text-center mb-30">
                                 <div class="z-instructors__thumb mb-15">
-                                    <img src="{% static 'assets/img/instructor/02.jpg" alt="">
+                                    <img src="{% static 'assets/img/instructor/02.jpg' %}" alt="">
                                     <div class="social-media">
                                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -494,7 +508,7 @@
                                     <p>UI/UX Designer</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </section>
@@ -529,7 +543,7 @@
                     <div class="footer__widget mb-30">
                         <div class="footer-log mb-20">
                             <a href="index.html" class="logo">
-                                <img src="{% static 'assets/img/logo/header_logo_one.svg" alt="">
+                                <img src="{% static 'assets/img/logo/header_logo_one.svg' %}" alt="">
                             </a>
                         </div>
                         <p>Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed di nonumy eirmod temporinvi dunt ut labore lorem ipsum.</p>

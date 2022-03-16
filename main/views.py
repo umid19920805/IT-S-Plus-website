@@ -11,9 +11,39 @@ def index2(request):
 
     return render(request, 'index-2.html')
 
-def about(request):
 
-    return render(request, 'about.html')
+
+######_____START________##########---About-US (Biz haqimizda)---######################
+def about(request):
+    about1 = Biz_Haqimizda_background_tagi.objects.all()
+    about2 = Biz_Haqimizda_background_tagi2.objects.all()
+    about3 = Biz_Haqimizda_asosiy_rasmlari.objects.all()
+    about4 = Biz_Haqimizda_asosiy_rasm_matnlari.objects.all()
+    about5 = Biz_Haqimizda_statiskalar_tagi.objects.all()
+    about6 = Biz_Haqimizda_pastdagi_asosiy_rasmlar.objects.all()
+    about7 = Biz_Haqimizda_pastdagi_asosiy_rasmlar_matni.objects.all()
+    
+
+
+
+
+    context = {
+        'usabout' : about1,
+        'usabout2' : about2,
+        'usabout3' : about3,
+        'usabout4' : about4,
+        'usabout5' : about5,
+        'usabout6' : about6,
+        'usabout7' : about7,
+
+
+    }
+
+    return render(request, 'about.html', context)
+######_____END________##########---About-US (Biz haqimizda)---########################
+
+
+
 
 def blogdetails(request):
 
