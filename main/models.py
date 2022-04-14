@@ -1,11 +1,10 @@
-<<<<<<< HEAD
 # from turtle import title
 from distutils.command.upload import upload
 from statistics import mode
-=======
+
 from distutils.command import upload
 from operator import mod
->>>>>>> ff69e437772b7220a36c4a5a7e0024bfbb71bc3f
+
 from django.db import models
 
 class CompanyInfo(models.Model):
@@ -19,7 +18,7 @@ class CompanyInfo(models.Model):
     def __str__(self):
       return self.Company_name
     class Meta:
-<<<<<<< HEAD
+
         verbose_name_plural = "Konpaniya ma'lumotlari va u haqida"
 
 class Mainpage_1section(models.Model):
@@ -45,7 +44,7 @@ class Slide2ensectionCarusel(models.Model):
     title = models.CharField(max_length=50)
     desc = models.CharField(max_length=200)
 
-=======
+    class Meta:
         verbose_name_plural = "Kompaniya ma'lumotlari va u haqida"
 
 
@@ -115,4 +114,4 @@ class Biz_Haqimizda_pastdagi_asosiy_rasmlar(models.Model):
   
 
 #################################################_____END________##########---About-US (Biz haqimizda)---#################################################
->>>>>>> ff69e437772b7220a36c4a5a7e0024bfbb71bc3f
+
