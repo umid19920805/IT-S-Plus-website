@@ -4,6 +4,8 @@ from .models import *
 ######_____START________##########---Bosh Sahifa---######################
 admin.site.register(CompanyInfo)
 admin.site.register(Mainpage_1section)
+admin.site.register(Slide2ensectioninfo)
+admin.site.register(Slide2ensectionCarusel)
 
 
 ######_____END________##########---Bosh sahifa---########################
