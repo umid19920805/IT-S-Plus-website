@@ -41,11 +41,7 @@ class Slide2ensectioninfo(models.Model):
     desc = models.CharField(max_length=200)
 
     class Meta:
-<<<<<<< HEAD
         verbose_name_plural = "<Bosh sahifa> 2 - section yozuvi va sarlavhasi ma'lumotlari"
-=======
-        verbose_name_plural = "2 - section yozuvi va sarlavhasi ma'lumotlari"
->>>>>>> e9743af2c384b063fcd3c67dd151e661d7ce3e30
  
 class Slide2ensectionCarusel(models.Model):
     # icon = models.ImageField(upload_to = "img")
@@ -53,11 +49,7 @@ class Slide2ensectionCarusel(models.Model):
     desc = models.CharField(max_length=200)
 
     class Meta:
-<<<<<<< HEAD
         verbose_name_plural = "<Bosh sahifa> 2 - section Karusel ma'lumotlari"
-=======
-        verbose_name_plural = "2 - section Karusel ma'lumotlari"
->>>>>>> e9743af2c384b063fcd3c67dd151e661d7ce3e30
 
 
 class Section3(models.Model):
