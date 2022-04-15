@@ -1,14 +1,13 @@
 from django.contrib import admin
 from .models import *
  
-
+######_____START________##########---Bosh Sahifa---######################
 admin.site.register(CompanyInfo)
 admin.site.register(Mainpage_1section)
 
+######_____END________##########---Bosh sahifa---########################
 
-
-
-
+######################################################################################################################################################
 
 ######_____START________##########---About-US (Biz haqimizda)---######################
 admin.site.register(Biz_Haqimizda_background_tagi)

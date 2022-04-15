@@ -5,7 +5,7 @@ import requests
 
 
 def index(request):
-    Mainpage=Mainpage_1section.objects.first()
+    Mainpage = Mainpage_1section.objects.first()
 
     context = {
         'Mainpage' : Mainpage,
