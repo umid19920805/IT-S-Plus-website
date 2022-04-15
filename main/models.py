@@ -1,7 +1,7 @@
 # from turtle import title
 from distutils.command.upload import upload
 from statistics import mode
-
+from django import forms
 from distutils.command import upload
 from operator import mod
 
@@ -40,7 +40,7 @@ class Slide2ensectioninfo(models.Model):
     desc = models.CharField(max_length=200)
 
 class Slide2ensectionCarusel(models.Model):
-    icon = models.ImageField(upload_to = "img")
+    # icon = models.ImageField(upload_to = "img")
     title = models.CharField(max_length=50)
     desc = models.CharField(max_length=200)
 
