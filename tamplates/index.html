@@ -143,27 +143,23 @@
                <div class="row justify-content-lg-center justify-content-start">
                    <div class="col-xl-3 col-lg-8">
                        <div class="deal-box mb-30 text-center text-xl-start">
-                           <h2 class="mb-20"><b>Great</b> Deals For You</h2>
-                           <p>There are many variations of passa of Lorem Ipsum available, but the majority have suffered.</p>
+                           <h2 class="mb-20">{{Slidedesc.title}}</h2>
+                           <p>{{Slidedesc.desc}}</p>
                        </div>
                    </div>
                    <div class="col-xl-8">
                        <div class="deal-active owl-carousel mb-30">
+                           {% for slidecarus in Slidecarus %}
                             <div class="single-item">
                                 <div class="single-box mb-30">
                                     <div class="single-box__icon mb-25">
                                         <img src="{% static 'assets/img/icon/puzzle.svg'%}" alt="">
                                     </div>
-
-                                    <h4 class="sub-title mb-20">Learn Omadbek</h4>
-
-                                    <h4 class="sub-title mb-20">Learn Umidjon aka and Abdullo</h4>
-
-
-                                    <p>There are many variations of pas of Lorm Ipsum available.</p>
+                                    <h4 class="sub-title mb-20">{{slidecarus.title}}</h4>
+                                    <p>{{slidecarus.desc}}.</p>
                                 </div>
                             </div>
-                            <div class="single-item">
+                            <!-- <div class="single-item">
                                 <div class="single-box s-box2 mb-30">
                                     <div class="single-box__icon mb-25">
                                         <img src="{% static 'assets/img/icon/manager.svg'%}" alt="">
@@ -198,7 +194,8 @@
                                     <h4 class="sub-title mb-20">Expert Trainers</h4>
                                     <p>There are many variations of pas of Lorm Ipsum available.</p>
                                 </div>
-                            </div>
+                            </div> -->
+                            {% endfor %}
                        </div>
                    </div>
                </div>
