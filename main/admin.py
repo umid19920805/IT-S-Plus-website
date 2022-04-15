@@ -3,6 +3,7 @@ from .models import *
  
 
 admin.site.register(CompanyInfo)
+admin.site.register(Mainpage_1section)
 
 
 

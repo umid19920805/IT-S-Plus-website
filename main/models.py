@@ -22,12 +22,12 @@ class CompanyInfo(models.Model):
         verbose_name_plural = "Konpaniya ma'lumotlari va u haqida"
 
 class Mainpage_1section(models.Model):
-    title = models.CharField(max_length=50,blank=True)
+    title1 = models.CharField("Title",max_length=70,blank=True)
     desc = models.TextField("Sarlavha ostidagi text '160 ta letter tavsiya etiladi",)
     title = models.CharField("#1 bilan yozilgan text",max_length=50,blank=True)
     imgbig = models.ImageField("Asosiy surat katta (PNG format va 521x651 o'lchamlar tavsiya etiladi)",upload_to="img")
-    imgbig = models.ImageField("Yordamchi suratlar (PNG format va 250x250 o'lchamlar tavsiya etiladi)",upload_to="img")
-    imgbig = models.ImageField("Yordamchi suratlar (PNG format va 232x232 o'lchamlar tavsiya etiladi)",upload_to="img")
+    img2 = models.ImageField("Yordamchi suratlar (PNG format va 250x250 o'lchamlar tavsiya etiladi)",upload_to="img")
+    img3 = models.ImageField("Yordamchi suratlar (PNG format va 232x232 o'lchamlar tavsiya etiladi)",upload_to="img")
 
 
     def __str__(self):
