@@ -56,43 +56,41 @@
                         <nav class="main-menu navbar navbar-expand-lg justify-content-center">
                             <div class="nav-container">
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <a class="nav-item" style="font-size: 21px;" href="{% url 'index'%}" >
+                                        Bosh sahifa
+                                    </a>
                                     <ul class="navbar-nav">
                                         <li class="nav-item dropdown mega-menu">
                                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            All Categories 
+                                            Xizmatlar
                                             </a>
                                             <ul class="dropdown-menu submenu mega-menu__sub-menu-box" aria-labelledby="navbarDropdown">
-                                                <li><a href="index.html"><span><img src="{% static 'assets/img/icon/icon7.svg' %}" alt=""></span> Business</a></li>
-                                                <li><a href="index-2.html"><span><img src="{% static 'assets/img/icon/icon8.svg' %}" alt=""></span> Technology</a></li>
-                                                <li><a href="index.html"><span><img src="{% static 'assets/img/icon/icon9.svg' %}" alt=""></span> Development</a></li>
-                                                <li><a href="index-2.html"><span><img src="{% static 'assets/img/icon/icon10.svg' %}" alt=""></span> Photography</a></li>
-                                                <li><a href="index.html"><span><img src="{% static 'assets/img/icon/icon11.svg' %}" alt=""></span> Digital Marketing</a></li>
-                                                <li><a href="index-2.html"><span><img src="{% static 'assets/img/icon/icon12.svg' %}" alt=""></span> Programming</a></li>
-                                                <li><a href="index.html"><span><img src="{% static 'assets/img/icon/icon14.svg' %}" alt=""></span> Videograpgy</a></li>
-                                                <li><a href="index-2.html"><span><img src="{% static 'assets/img/icon/icon13.svg' %}" alt=""></span> Illustration</a></li>
+                                                <li><a href="{% url 'index'%}"><span><img src="{% static 'assets/img/icon/icon7.svg'%}" alt=""></span> Biznes</a></li>
+                                                <li><a href="{% url 'index2'%}"><span><img src="{% static 'assets/img/icon/icon8.svg'%}" alt=""></span> Technology</a></li>
+                                                <li><a href="{% url 'index'%}"><span><img src="{% static 'assets/img/icon/icon9.svg'%}" alt=""></span> Development</a></li>
+                                                <li><a href="{% url 'index2'%}"><span><img src="{% static 'assets/img/icon/icon10.svg'%}" alt=""></span> Photography</a></li>
+                                                <li><a href="{% url 'index'%}"><span><img src="{% static 'assets/img/icon/icon11.svg'%}" alt=""></span> Digital Marketing</a></li>
+                                                <li><a href="{% url 'index2'%}"><span><img src="{% static 'assets/img/icon/icon12.svg'%}" alt=""></span> Programming</a></li>
+                                                <li><a href="{% url 'index'%}"><span><img src="{% static 'assets/img/icon/icon14.svg'%}" alt=""></span> Videograpgy</a></li>
+                                                <li><a href="{% url 'index2'%}"><span><img src="{% static 'assets/img/icon/icon13.svg'%}" alt=""></span> Illustration</a></li>
                                             </ul>
                                         </li>
+                                            <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                                <li><a class="dropdown-item" href="{% url 'index'%}">Home Style 1</a></li>
+                                                <li><a class="dropdown-item" href="{% url 'index2'%}">Home Style 2</a></li>
+                                                <li><a class="dropdown-item" href="{% url 'index3'%}">Home Style 3</a></li>
+                                            </ul> -->
                                         <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                Home
-                                            </a>
-                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                                                <li><a class="dropdown-item" href="index.html">Home Style 1</a></li>
-                                                <li><a class="dropdown-item" href="index-2.html">Home Style 2</a></li>
-                                                <li><a class="dropdown-item" href="index-3.html">Home Style 3</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item dropdown active">
                                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
                                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
-                                                <li><a class="dropdown-item" href="about.html">About Us</a></li>
-                                                <li><a class="dropdown-item" href="courses.html">Course One</a></li>
-                                                <li><a class="dropdown-item" href="courses-2.html">Course Two</a></li>
-                                                <li><a class="dropdown-item" href="course-details.html">Courses Details</a></li>
-                                                <li><a class="dropdown-item" href="price.html">Price</a></li>
-                                                <li><a class="dropdown-item" href="instructor.html">Instructor</a></li>
-                                                <li><a class="dropdown-item" href="instructor-profile.html">Instructor Profile</a></li>
-                                                <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                                                <li><a class="dropdown-item" href="{% url 'about'%}">About Us</a></li>
+                                                <li><a class="dropdown-item" href="{% url 'courses' %}">Course One</a></li>
+                                                <li><a class="dropdown-item" href="{% url 'courses2' %}">Course Two</a></li>
+                                                <li><a class="dropdown-item" href="{% url 'coursedetails' %}">Courses Details</a></li>
+                                                <li><a class="dropdown-item" href="{% url 'price' %}">Price</a></li>
+                                                <li><a class="dropdown-item" href="{% url 'instructor' %}">Instructor</a></li>
+                                                <li><a class="dropdown-item" href="{% url 'instructorprofile' %}">Instructor Profile</a></li>
+                                                <li><a class="dropdown-item" href="{% url 'faq' %}">FAQ</a></li>
                                             </ul>
                                         </li>
                                         <li class="nav-item dropdown">
@@ -100,12 +98,12 @@
                                                 Blog
                                             </a>
                                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
-                                                <li><a class="dropdown-item" href="blog.html">Blog Grid</a></li>
-                                                <li><a class="dropdown-item" href="blog-details.html">Blog Details</a></li>
+                                                <li><a class="dropdown-item" href="{% url 'blog'%}">Blog Grid</a></li>
+                                                <li><a class="dropdown-item" href="{% url 'blogdetails'%}">Blog Details</a></li>
                                             </ul>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="contact.html" id="navbarDropdown5" role="button"  aria-expanded="false">Contact</a></li>
+                                            <a class="nav-link" href="{% url 'contact'%}" id="navbarDropdown5" role="button"  aria-expanded="false">Contact</a></li>
                                     </ul>
                                 </div>
                             </div>
