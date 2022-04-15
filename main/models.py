@@ -24,6 +24,7 @@ class CompanyInfo(models.Model):
 class Mainpage_1section(models.Model):
     title1 = models.CharField("Title",max_length=70,blank=True)
     desc = models.TextField("Sarlavha ostidagi text '160 ta letter tavsiya etiladi",)
+    desc_last = models.TextField("Sarlavha ostidagi text '160 ta letter tavsiya etiladi_davomi",)
     title = models.CharField("#1 bilan yozilgan text",max_length=50,blank=True)
     imgbig = models.ImageField("Asosiy surat katta (PNG format va 521x651 o'lchamlar tavsiya etiladi)",upload_to="img")
     img3 = models.ImageField("Yordamchi suratlar3 (PNG format va 250x250 o'lchamlar tavsiya etiladi)",upload_to="img")
