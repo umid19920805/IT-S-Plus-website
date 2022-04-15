@@ -1,11 +1,17 @@
+from multiprocessing import context
 from .models import *
 from django.shortcuts import render, redirect, HttpResponseRedirect
 import requests
 from django.contrib.auth import authenticate, login, logout
 
 def index(request):
+    Mainpage=Mainpage_1section.objects.first()
 
-    return render(request, 'index.html')
+    context = {
+        'Mainpage' : Mainpage,
+    }
+
+    return render(request, 'index.html', context)
 
 def index2(request):
 
