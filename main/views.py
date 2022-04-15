@@ -5,10 +5,18 @@ import requests
 
 
 def index(request):
+<<<<<<< HEAD
     Mainpage = Mainpage_1section.objects.first()
+=======
+    Mainpage=Mainpage_1section.objects.first()
+    slidedesc = Slide2ensectioninfo.objects.first()
+    slidecarus = Slide2ensectioninfo.objects.all()
+>>>>>>> dca6413879ab9300330d9a227c37b38ae2d5ef27
 
     context = {
         'Mainpage' : Mainpage,
+        'Slidedesc' : slidedesc,
+        'Slidecarus' : slidecarus,
     }
 
     return render(request, 'index.html', context)
