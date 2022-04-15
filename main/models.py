@@ -26,8 +26,8 @@ class Mainpage_1section(models.Model):
     desc = models.TextField("Sarlavha ostidagi text '160 ta letter tavsiya etiladi",)
     title = models.CharField("#1 bilan yozilgan text",max_length=50,blank=True)
     imgbig = models.ImageField("Asosiy surat katta (PNG format va 521x651 o'lchamlar tavsiya etiladi)",upload_to="img")
-    img2 = models.ImageField("Yordamchi suratlar (PNG format va 250x250 o'lchamlar tavsiya etiladi)",upload_to="img")
-    img3 = models.ImageField("Yordamchi suratlar (PNG format va 232x232 o'lchamlar tavsiya etiladi)",upload_to="img")
+    img3 = models.ImageField("Yordamchi suratlar3 (PNG format va 250x250 o'lchamlar tavsiya etiladi)",upload_to="img")
+    img2 = models.ImageField("Yordamchi suratlar2 (PNG format va 232x232 o'lchamlar tavsiya etiladi)",upload_to="img")
 
 
     def __str__(self):
