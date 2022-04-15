@@ -34,7 +34,7 @@ class Mainpage_1section(models.Model):
     def __str__(self):
       return self.title
     class Meta:
-        verbose_name_plural = "Bosh sahifa 1-section"
+        verbose_name_plural = "01_Bosh sahifa 1-section"
 
 class Slide2ensectioninfo(models.Model):
     title = models.CharField(max_length=50)
