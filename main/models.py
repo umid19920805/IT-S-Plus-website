@@ -42,7 +42,7 @@ class Slide2ensectioninfo(models.Model):
 
     class Meta:
         verbose_name_plural = "2 - section yozvi va sarlavhasi ma'lumotlari"
-
+ 
 class Slide2ensectionCarusel(models.Model):
     # icon = models.ImageField(upload_to = "img")
     title = models.CharField(max_length=50)
