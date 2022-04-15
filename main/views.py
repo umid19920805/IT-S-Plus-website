@@ -7,7 +7,7 @@ import requests
 def index(request):
     Mainpage=Mainpage_1section.objects.first()
     slidedesc = Slide2ensectioninfo.objects.first()
-    slidecarus = Slide2ensectioninfo.objects.all()
+    slidecarus = Slide2ensectionCarusel.objects.all()
 
     context = {
         'Mainpage' : Mainpage,

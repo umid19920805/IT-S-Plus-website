@@ -40,13 +40,16 @@ class Slide2ensectioninfo(models.Model):
     title = models.CharField(max_length=50)
     desc = models.CharField(max_length=200)
 
+    class Meta:
+        verbose_name_plural = "2 - section yozuvi va sarlavhasi ma'lumotlari"
+ 
 class Slide2ensectionCarusel(models.Model):
     # icon = models.ImageField(upload_to = "img")
     title = models.CharField(max_length=50)
     desc = models.CharField(max_length=200)
 
     class Meta:
-        verbose_name_plural = "Kompaniya ma'lumotlari va u haqida"
+        verbose_name_plural = "2 - section Karusel ma'lumotlari"
 
 
 
