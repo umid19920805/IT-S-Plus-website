@@ -149,11 +149,7 @@
                    </div>
                    <div class="col-xl-8">
                        <div class="deal-active owl-carousel mb-30">
-<<<<<<< HEAD
-                           {% for slidecarus in Slidecarus %}
-=======
                            {% for slidecarus in Slidecarus %} 
->>>>>>> e9743af2c384b063fcd3c67dd151e661d7ce3e30
                             <div class="single-item">
                                 <div class="single-box mb-30">
                                     <div class="single-box__icon mb-25">
@@ -215,8 +211,8 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="section-title text-center mb-55">
-                                <h5 class="bottom-line mb-25">Teachers & Students</h5>
-                                <h2>What you Looking For?</h2>
+                                <h5 class="bottom-line mb-25">{{Section3.desc}}</h5>
+                                <h2>{{Section3.title}}</h2>
                             </div>
                         </div>
                     </div>
@@ -224,71 +220,71 @@
                         <div class="col-xl-6 col-lg-6 col-md-6">
                             <div class="what-box text-center mb-35 wow fadeInUp2 animated" data-wow-delay='.3s'>
                                 <div class="what-box__icon mb-30">
-                                    <img src="{% static 'assets/img/icon/phone-operator.svg'%}" alt="">
+                                    <img src="{{ Section3.cardicon1.url }}" alt="">
                                 </div>
-                                <h3>Do you want to teach here?</h3>
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy eirmod tempor invidunt ut labore et dolore magn aliq erat.</p>
-                                <a href="contact.html" class="theme_btn border_btn">Register Now</a>
-                            </div>
+                                <h3>{{Section3.titlecard1}}</h3>
+                                <p>{{Section3.desccard1}}</p>
+                                <a href="contact.html" class="theme_btn border_btn">Bizga bog'laning</a>
+                            </div> 
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6">
                             <div class="what-box text-center mb-35 wow fadeInUp2 animated" data-wow-delay='.3s'>
                                 <div class="what-box__icon mb-30">
-                                    <img src="{% static 'assets/img/icon/graduate.svg'%}" alt="">
+                                    <img src="{{ Section3.cardicon2.url }}" alt="">
                                 </div>
-                                <h3>Do you want to learn here?</h3>
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy eirmod tempor invidunt ut labore et dolore magn aliq erat.</p>
-                                <a href="contact.html" class="theme_btn border_btn active">Register Now</a>
+                                <h3>{{Section3.titlecard2}}</h3>
+                                <p>{{Section3.desccard2}}</p>
+                                <a href="contact.html" class="theme_btn border_btn active">Bizga bog'laning</a>
                             </div>
                         </div>
                     </div>
                     <div class="categoris-container">
                         <div class="col-xl-12">
                             <div class="section-title text-center mb-55">
-                                <h5 class="bottom-line mb-25">Browse Categories</h5>
-                                <h2>Explore our Online Subjects</h2>
+                                <h5 class="bottom-line mb-25">{{sec.sarlavha}}</h5>
+                                <h2>{{sec.sarlavha_tagi}}</h2>
                             </div>
                         </div>
                         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-5">
                             <div class="col">
                                 <div class="single-category text-center mb-30 wow fadeInUp2 animated" data-wow-delay='.1s'>
-                                    <img class="mb-30" src="{% static 'assets/img/category-icon/atom.svg'%}" alt="">
-                                    <h4 class="sub-title mb-10"><a href="course-details.html">Science</a></h4>
-                                    <p>126+ Courses Available</p>
+                                    <img class="mb-30" src="{{ sec.icon1.url }}" alt="">
+                                    <h4 class="sub-title mb-10"><a href="course-details.html">{{sec.titlecard1}}</a></h4>
+                                    <p>{{sec.desccard1}}</p>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="single-category text-center mb-30 wow fadeInUp2 animated" data-wow-delay='.2s'>
-                                    <img class="mb-30" src="{% static 'assets/img/category-icon/web-development.svg'%}" alt="">
-                                    <h4 class="sub-title mb-10"><a href="course-details.html">Development</a></h4>
-                                    <p>325+ Courses Available</p>
+                                    <img class="mb-30" src="{{ sec.icon2.url }}" alt="">
+                                    <h4 class="sub-title mb-10"><a href="course-details.html">{{sec.titlecard2}}</a></h4>
+                                    <p>{{sec.desccard2}}</p>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="single-category text-center mb-30 wow fadeInUp2 animated" data-wow-delay='.3s'>
-                                    <img class="mb-30" src="{% static 'assets/img/category-icon/atom.svg'%}" alt="">
-                                    <h4 class="sub-title mb-10"><a href="course-details.html">Science</a></h4>
-                                    <p>95+ Courses Available</p>
+                                    <img class="mb-30" src="{{ sec.icon3.url }}" alt="">
+                                    <h4 class="sub-title mb-10"><a href="course-details.html">{{sec.titlecard3}}</a></h4>
+                                    <p>{{sec.desccard3}}</p>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="single-category text-center mb-30 wow fadeInUp2 animated" data-wow-delay='.4s'>
-                                    <img class="mb-30" src="{% static 'assets/img/category-icon/career-path.svg'%}" alt="">
-                                    <h4 class="sub-title mb-10"><a href="course-details.html">Career</a></h4>
-                                    <p>156+ Courses Available</p>
+                                    <img class="mb-30" src="{{ sec.icon4.url }}" alt="">
+                                    <h4 class="sub-title mb-10"><a href="course-details.html">{{sec.titlecard4}}</a></h4>
+                                    <p>{{sec.desccard4}}</p>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="single-category text-center mb-30 wow fadeInUp2 animated" data-wow-delay='.5s'>
-                                    <img class="mb-30" src="{% static 'assets/img/category-icon/graphic-tool.svg'%}" alt="">
-                                    <h4 class="sub-title mb-10"><a href="course-details.html">Arts & Design</a></h4>
-                                    <p>136+ Courses Available</p>
+                                    <img class="mb-30" src="{{ sec.icon5.url }}" alt="">
+                                    <h4 class="sub-title mb-10"><a href="course-details.html">{{sec.titlecard5}}</a></h4>
+                                    <p>{{sec.desccard5}}</p>
                                 </div>
                             </div>
                         </div>
                         <div class="row justify-content-center">
                             <div class="col-md-12 mt-20 text-center mb-20 wow fadeInUp2 animated" data-wow-delay='.6s'>
-                                <a href="courses.html" class="theme_btn">All Categories</a>
+                                <a href="courses.html" class="theme_btn">Barcha xizmatlar</a>
                             </div>
                         </div>
                     </div>
@@ -310,7 +306,7 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-12 text-center">
                         <div class="portfolio-menu mb-30">
-                            <button class="gf_btn active" data-filter='*'>All</button>
+                            <button class="gf_btn active" data-filter='*'>Barchasi</button>
                             <button class="gf_btn" data-filter='.cat1'>Career</button>
                             <button class="gf_btn" data-filter='.cat2'>Development</button>
                             <button class="gf_btn" data-filter='.cat3'>Business</button>
@@ -333,7 +329,7 @@
                                     <span>Lab</span>
                                     <a class="f-right" href="instructor-details.html"><img src="{% static 'assets/img/course/in1.png'%}" alt=""></a>
                                 </div>
-                                <h4 class="sub-title mb-20"><a href="course-details.html">Take Your Career to the Next Level Future</a></h4>
+                                <h4 class="sub-title mb-20"><a href="course-details.html">1</a></h4>
                                 <div class="course__meta">
                                     <span><img class="icon" src="{% static 'assets/img/icon/time.svg'%}" alt="course-meta"> 12 Class</span>
                                     <span><img class="icon" src="{% static 'assets/img/icon/bar-chart.svg'%}" alt="course-meta"> Higher</span>
@@ -356,7 +352,7 @@
                                     <span>Lab</span>
                                     <a class="f-right" href="instructor-details.html"><img src="{% static 'assets/img/course/in2.png'%}" alt=""></a>
                                 </div>
-                                <h4 class="sub-title mb-20"><a href="course-details.html">Your Career to build for the pro level</a></h4>
+                                <h4 class="sub-title mb-20"><a href="course-details.html">2</a></h4>
                                 <div class="course__meta">
                                     <span><img class="icon" src="{% static 'assets/img/icon/time.svg'%}" alt="course-meta"> 12 Class</span>
                                     <span><img class="icon" src="{% static 'assets/img/icon/bar-chart.svg'%}" alt="course-meta"> Higher</span>
@@ -379,7 +375,7 @@
                                     <span>Lab</span>
                                     <a class="f-right" href="instructor-details.html"><img src="{% static 'assets/img/course/in3.png'%}" alt=""></a>
                                 </div>
-                                <h4 class="sub-title mb-20"><a href="course-details.html">Take A Course For You Biright Future</a></h4>
+                                <h4 class="sub-title mb-20"><a href="course-details.html">3</a></h4>
                                 <div class="course__meta">
                                     <span><img class="icon" src="{% static 'assets/img/icon/time.svg'%}" alt="course-meta"> 12 Class</span>
                                     <span><img class="icon" src="{% static 'assets/img/icon/bar-chart.svg'%}" alt="course-meta"> Higher</span>
@@ -402,7 +398,7 @@
                                     <span>Lab</span>
                                     <a class="f-right" href="instructor-details.html"><img src="{% static 'assets/img/course/in4.png'%}" alt=""></a>
                                 </div>
-                                <h4 class="sub-title mb-20"><a href="course-details.html">Take Your Career to the Next Level Future</a></h4>
+                                <h4 class="sub-title mb-20"><a href="course-details.html">4</a></h4>
                                 <div class="course__meta">
                                     <span><img class="icon" src="{% static 'assets/img/icon/time.svg'%}" alt="course-meta"> 12 Class</span>
                                     <span><img class="icon" src="{% static 'assets/img/icon/bar-chart.svg'%}" alt="course-meta"> Higher</span>
@@ -425,7 +421,7 @@
                                     <span>Lab</span>
                                     <a class="f-right" href="instructor-details.html"><img src="{% static 'assets/img/course/in5.png'%}" alt=""></a>
                                 </div>
-                                <h4 class="sub-title mb-20"><a href="course-details.html">Your Career to build for the pro level</a></h4>
+                                <h4 class="sub-title mb-20"><a href="course-details.html">5</a></h4>
                                 <div class="course__meta">
                                     <span><img class="icon" src="{% static 'assets/img/icon/time.svg'%}" alt="course-meta"> 12 Class</span>
                                     <span><img class="icon" src="{% static 'assets/img/icon/bar-chart.svg'%}" alt="course-meta"> Higher</span>
@@ -448,7 +444,7 @@
                                     <span>Lab</span>
                                     <a class="f-right" href="instructor-details.html"><img src="{% static 'assets/img/course/in6.png'%}" alt=""></a>
                                 </div>
-                                <h4 class="sub-title mb-20"><a href="course-details.html">Take A Course For You Biright Future</a></h4>
+                                <h4 class="sub-title mb-20"><a href="course-details.html">6</a></h4>
                                 <div class="course__meta">
                                     <span><img class="icon" src="{% static 'assets/img/icon/time.svg'%}" alt="course-meta"> 12 Class</span>
                                     <span><img class="icon" src="{% static 'assets/img/icon/bar-chart.svg'%}" alt="course-meta"> Higher</span>
@@ -504,9 +500,9 @@
                                         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form. There are many variations of passages of Lorem Ipsum available.</p>
                                     </div>
                                     <ul class="text-list mb-40 wow fadeInUp2 animated" data-wow-delay='.2s'>
-                                        <li>There are many variations of passages of Lorem Ipsum.</li>
-                                        <li>The majority have suffered alteration in some form. </li>
-                                        <li>There are many variations of passages of Lorem Ipsum.</li>
+                                        <li>222222222</li>
+                                        <li>333333333</li>
+                                        <li>444444444</li>
                                     </ul>
                                     <a href="about.html" class="theme_btn wow fadeInUp2 animated" data-wow-delay='.3s'>More Details</a>
                                 </div>

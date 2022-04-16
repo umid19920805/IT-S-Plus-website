@@ -43,11 +43,11 @@ class Mainpage_1section(models.Model):
     img3 = models.ImageField("Yordamchi suratlar3 (PNG format va 250x250 o'lchamlar tavsiya etiladi)",upload_to="img")
     img2 = models.ImageField("Yordamchi suratlar2 (PNG format va 232x232 o'lchamlar tavsiya etiladi)",upload_to="img")
 
-
     def __str__(self):
       return self.title
     class Meta:
         verbose_name_plural = "01_Bosh sahifa 1-section"
+
 
 class Slide2ensectioninfo(models.Model):
     title = models.CharField(max_length=50)
@@ -55,7 +55,8 @@ class Slide2ensectioninfo(models.Model):
 
     class Meta:
         verbose_name_plural = "<Bosh sahifa> 2 - section yozuvi va sarlavhasi ma'lumotlari"
- 
+
+
 class Slide2ensectionCarusel(models.Model):
     # icon = models.ImageField(upload_to = "img")
     title = models.CharField(max_length=50)
@@ -65,9 +66,49 @@ class Slide2ensectionCarusel(models.Model):
         verbose_name_plural = "<Bosh sahifa> 2 - section Karusel ma'lumotlari"
 
 
+<<<<<<< HEAD
 
+=======
+class Sectioninfo3(models.Model):
+    desc = models.CharField("3- section krish yozuvi",max_length=70)
+    title = models.CharField("3- section kirish yozuvi osti",max_length=70)
+    cardicon1 = models.ImageField(upload_to = "icon",blank=True)
+    cardicon2 = models.ImageField(upload_to = "icon",blank=True)
+    titlecard1 = models.CharField("1- card sarlavhasi",max_length=70)
+    desccard1 = models.CharField("1- card matni",max_length=70)
+    titlecard2 = models.CharField("2- card sarlavhasi",max_length=70)
+    desccard2 = models.CharField("2- card matni",max_length=70)
 
+    class Meta:
+        verbose_name_plural = "<Bosh sahifa> 3- Section ma'lumotlari"
+>>>>>>> cacd3e4132314728eb9efc99934218b675d28825
 
+class Sectioninfor4(models.Model):
+        sarlavha = models.CharField(max_length=100)
+        sarlavha_tagi = models.CharField(max_length=100)
+
+        icon1 = models.ImageField(upload_to = "icon",blank=True)
+        titlecard1 = models.CharField("1-card sarlavhasi",max_length=70)
+        desccard1 = models.CharField("1-card matni",max_length=70)
+
+        icon2 = models.ImageField(upload_to = "icon",blank=True)
+        titlecard2 = models.CharField("2-card sarlavhasi",max_length=70)
+        desccard2 = models.CharField("2-card matni",max_length=70)
+
+        icon3 = models.ImageField(upload_to = "icon",blank=True)
+        titlecard3 = models.CharField("3-card sarlavhasi",max_length=70)
+        desccard3 = models.CharField("3-card matni",max_length=70)
+
+        icon4 = models.ImageField(upload_to = "icon",blank=True)
+        titlecard4 = models.CharField("4-card sarlavhasi",max_length=70)
+        desccard4 = models.CharField("4-card matni",max_length=70)
+
+        icon5 = models.ImageField(upload_to = "icon",blank=True)
+        titlecard5 = models.CharField("5-card sarlavhasi",max_length=70)
+        desccard5 = models.CharField("5-card matni",max_length=70)
+
+        
+        
 
 
 

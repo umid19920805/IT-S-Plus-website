@@ -6,7 +6,12 @@ admin.site.register(CompanyInfo)
 admin.site.register(Mainpage_1section)
 admin.site.register(Slide2ensectioninfo)
 admin.site.register(Slide2ensectionCarusel)
+<<<<<<< HEAD
 admin.site.register(Section3s)
+=======
+admin.site.register(Sectioninfo3)
+admin.site.register(Sectioninfor4)
+>>>>>>> cacd3e4132314728eb9efc99934218b675d28825
 
 
 ######_____END________##########---Bosh sahifa---########################

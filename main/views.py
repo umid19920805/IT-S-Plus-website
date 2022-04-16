@@ -8,13 +8,21 @@ def index(request):
     Mainpage=Mainpage_1section.objects.first()
     slidedesc = Slide2ensectioninfo.objects.first()
     slidecarus = Slide2ensectioninfo.objects.all()
+<<<<<<< HEAD
     section3 = Section3s.objects.first()
+=======
+    section3 = Sectioninfo3.objects.first()
+    section444 = Sectioninfor4.objects.first()
+    section666 = Sectioninfor6.objects.first()
+>>>>>>> cacd3e4132314728eb9efc99934218b675d28825
 
     context = {
         'Mainpage' : Mainpage,
         'Slidedesc' : slidedesc,
         'Slidecarus' : slidecarus,
         'Section3' : section3,
+        'sec' : section444,
+        'sec6' : section666,
     }
 
     return render(request, 'index.html', context)
