@@ -61,8 +61,12 @@ class Sectioninfo3(models.Model):
     titlecard1 = models.CharField("1- card sarlavhasi",max_length=70)
     desccard1 = models.CharField("1- card matni",max_length=70)
     titlecard2 = models.CharField("2- card sarlavhasi",max_length=70)
+<<<<<<< HEAD
     desccard2 = models.CharField("2- card matni",max_length=70) 
 
+=======
+#     desccard2 = models.CharField("2- card matni",max_length=70)
+>>>>>>> e158bb7148bd6112b04bb502105c193b6ce08d9f
 
     class Meta:
         verbose_name_plural = "<Bosh sahifa> 3- Section ma'lumotlari"
