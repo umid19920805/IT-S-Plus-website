@@ -9,12 +9,14 @@ def index(request):
     slidedesc = Slide2ensectioninfo.objects.first()
     slidecarus = Slide2ensectioninfo.objects.all()
     section3 = Sectioninfo3.objects.first()
+    section444 = Sectioninfor4.objects.first()
 
     context = {
         'Mainpage' : Mainpage,
         'Slidedesc' : slidedesc,
         'Slidecarus' : slidecarus,
         'Section3' : section3,
+        'sec' : section444,
     }
 
     return render(request, 'index.html', context)
