@@ -66,9 +66,6 @@ class Slide2ensectionCarusel(models.Model):
         verbose_name_plural = "<Bosh sahifa> 2 - section Karusel ma'lumotlari"
 
 
-<<<<<<< HEAD
-
-=======
 class Sectioninfo3(models.Model):
     desc = models.CharField("3- section krish yozuvi",max_length=70)
     title = models.CharField("3- section kirish yozuvi osti",max_length=70)
@@ -81,7 +78,6 @@ class Sectioninfo3(models.Model):
 
     class Meta:
         verbose_name_plural = "<Bosh sahifa> 3- Section ma'lumotlari"
->>>>>>> cacd3e4132314728eb9efc99934218b675d28825
 
 class Sectioninfor4(models.Model):
         sarlavha = models.CharField(max_length=100)
