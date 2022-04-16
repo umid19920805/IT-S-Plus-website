@@ -52,7 +52,8 @@ class Slide2ensectionCarusel(models.Model):
         verbose_name_plural = "<Bosh sahifa> 2 - section Karusel ma'lumotlari"
 
 
-class Section3(models.Model):
+
+class Sectioninfo3(models.Model):
     desc = models.CharField("3- section krish yozuvi",max_length=70)
     title = models.CharField("3- section krish yozuvi osti",max_length=70)
     cardicon1 = models.ImageField(upload_to = "icon",blank=True)
@@ -60,12 +61,11 @@ class Section3(models.Model):
     titlecard1 = models.CharField("1- card sarlavhasi",max_length=70)
     desccard1 = models.CharField("1- card matni",max_length=70)
     titlecard2 = models.CharField("2- card sarlavhasi",max_length=70)
-    desccard2 = models.CharField("2- card matni",max_length=70)
+    desccard2 = models.CharField("2- card matni",max_length=70) 
+
 
     class Meta:
-        verbose_name_plural = "<Bosh sahifa> 3- Section ma'lumotlari "
-
-
+        verbose_name_plural = "<Bosh sahifa> 3- Section ma'lumotlari"
 
 
 
