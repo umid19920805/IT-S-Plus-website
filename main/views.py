@@ -8,7 +8,7 @@ def index(request):
     Mainpage=Mainpage_1section.objects.first()
     slidedesc = Slide2ensectioninfo.objects.first()
     slidecarus = Slide2ensectioninfo.objects.all()
-    section3 = Section3.objects.all()
+    section3 = Section3s.objects.first()
 
     context = {
         'Mainpage' : Mainpage,
