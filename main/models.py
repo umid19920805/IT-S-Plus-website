@@ -103,6 +103,16 @@ class Zaybal_section(models.Model):
         desccc2 = models.CharField(max_length=100)
         textt2 = models.CharField(max_length=100)
 
+class Sectioninfor6(models.Model):
+        sarlavha_asosiy = models.CharField(max_length=100)
+        sarlavha_texti = models.CharField(max_length=100)
+        sarlavha_malumoti = models.CharField(max_length=100)
+        
+        desc_1 = models.CharField(max_length=100)
+        desc_2 = models.CharField(max_length=100)
+        desc_3 = models.CharField(max_length=100)
+
+
 
         
         
