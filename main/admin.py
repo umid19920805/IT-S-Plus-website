@@ -7,6 +7,7 @@ admin.site.register(Mainpage_1section)
 admin.site.register(Slide2ensectioninfo)
 admin.site.register(Slide2ensectionCarusel)
 admin.site.register(Sectioninfor4)
+admin.site.register(Zaybal_section)
 
 
 ######_____END________##########---Bosh sahifa---########################

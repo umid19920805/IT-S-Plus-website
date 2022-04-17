@@ -66,6 +66,8 @@ class Slide2ensectionCarusel(models.Model):
         verbose_name_plural = "<Bosh sahifa> 2 - section Karusel ma'lumotlari"
 
 
+
+
 class Sectioninfor4(models.Model):
         sarlavha = models.CharField(max_length=100)
         sarlavha_tagi = models.CharField(max_length=100)
@@ -89,6 +91,18 @@ class Sectioninfor4(models.Model):
         icon5 = models.ImageField(upload_to = "icon",blank=True)
         titlecard5 = models.CharField("5-card sarlavhasi",max_length=70)
         desccard5 = models.CharField("5-card matni",max_length=70)
+
+class Zaybal_section(models.Model):
+        sarlavxaaa = models.CharField(max_length=100)
+        text = models.CharField(max_length=100)
+
+        iconcard = models.ImageField(upload_to = 'img')
+        desccc = models.CharField(max_length=100)
+        textt = models.CharField(max_length=100)
+        iconcard2 = models.ImageField(upload_to = 'img')
+        desccc2 = models.CharField(max_length=100)
+        textt2 = models.CharField(max_length=100)
+
 
         
         
