@@ -20,7 +20,7 @@
                 <div class="info-widget">
                     <h4 class="offset-title mb-20">Biz haqimizdaa</h4>
                     <p class="mb-30">
-                        Hello But I must explain to you how all this mistaken ???Hello Motto
+                        Hello But I must explains to you how all this mistaken ???Hello Motto
                     </p>
                     <a class="theme_btn theme_btn_bg" href="contact.html">kontakt Us</a>
                 </div>
@@ -77,7 +77,7 @@
     
 
     <main>
-       <!--slider-area start-->
+       <!--slider-area start 1 section-->
        <section class="slider-area pt-180 pt-xs-150 pt-150 pb-xs-35">
            <img class="sl-shape shape_01" src="{% static 'assets/img/icon/01.svg'%}" alt="">
             <img class="sl-shape shape_02" src="{% static 'assets/img/icon/02.svg'%}" alt="">
@@ -137,7 +137,7 @@
            </div>
        </section>
        <!--slider-area end-->
-       <!--great-deal-area start-->
+       <!--great-deal-area start section 2-->
        <section class="great-deal-area pt-150 pb-90 pt-md-100 pb-md-40 pt-xs-100 pb-xs-40">
            <div class="container">
                <div class="row justify-content-lg-center justify-content-start">
@@ -202,7 +202,7 @@
            </div>
        </section>
        <!--great-deal-area end-->
-       <!--what-loking-for start-->
+       <!--what-loking-for start section 3 va 4-->
        <section class="what-looking-for pos-rel">
            <div class="what-blur-shape-one"></div>
            <div class="what-blur-shape-two"></div>
@@ -211,8 +211,8 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="section-title text-center mb-55">
-                                <h5 class="bottom-line mb-25">Teachers & Students</h5>
-                                <h2>What you Looking For?</h2>
+                                <h5 class="bottom-line mb-25">{{sec_zaybal.sarlavxaaa}}</h5>
+                                <h2>{{sec_zaybal.text}}</h2>
                             </div>
                         </div>
                     </div>
@@ -220,71 +220,71 @@
                         <div class="col-xl-6 col-lg-6 col-md-6">
                             <div class="what-box text-center mb-35 wow fadeInUp2 animated" data-wow-delay='.3s'>
                                 <div class="what-box__icon mb-30">
-                                    <img src="{% static 'assets/img/icon/phone-operator.svg'%}" alt="">
+                                    <img src="{{ sec_zaybal.iconcard.url }}" alt="">
                                 </div>
-                                <h3>Do you want to teach here?</h3>
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy eirmod tempor invidunt ut labore et dolore magn aliq erat.</p>
-                                <a href="contact.html" class="theme_btn border_btn">Register Now</a>
-                            </div>
+                                <h3>{{sec_zaybal.desccc}}</h3>
+                                <p>{{sec_zaybal.textt}}</p>
+                                <a href="contact.html" class="theme_btn border_btn">Bizga bog'laning</a>
+                            </div> 
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6">
                             <div class="what-box text-center mb-35 wow fadeInUp2 animated" data-wow-delay='.3s'>
                                 <div class="what-box__icon mb-30">
-                                    <img src="{% static 'assets/img/icon/graduate.svg'%}" alt="">
+                                    <img src="{{ sec_zaybal.iconcard2.url }}" alt="">
                                 </div>
-                                <h3>Do you want to learn here?</h3>
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed di nonumy eirmod tempor invidunt ut labore et dolore magn aliq erat.</p>
-                                <a href="contact.html" class="theme_btn border_btn active">Register Now</a>
+                                <h3>{{sec_zaybal.desccc2}}</h3>
+                                <p>{{sec_zaybal.textt2}}</p>
+                                <a href="contact.html" class="theme_btn border_btn active">Bizga bog'laning</a>
                             </div>
                         </div>
                     </div>
                     <div class="categoris-container">
                         <div class="col-xl-12">
                             <div class="section-title text-center mb-55">
-                                <h5 class="bottom-line mb-25">Browse Categories</h5>
-                                <h2>Explore our Online Subjects</h2>
+                                <h5 class="bottom-line mb-25">{{sec.sarlavha}}</h5>
+                                <h2>{{sec.sarlavha_tagi}}</h2>
                             </div>
                         </div>
                         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-5">
                             <div class="col">
                                 <div class="single-category text-center mb-30 wow fadeInUp2 animated" data-wow-delay='.1s'>
-                                    <img class="mb-30" src="{% static 'assets/img/category-icon/atom.svg'%}" alt="">
-                                    <h4 class="sub-title mb-10"><a href="course-details.html">Science</a></h4>
-                                    <p>126+ Courses Available</p>
+                                    <img class="mb-30" src="{{ sec.icon1.url }}" alt="">
+                                    <h4 class="sub-title mb-10"><a href="course-details.html">{{sec.titlecard1}}</a></h4>
+                                    <p>{{sec.desccard1}}</p>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="single-category text-center mb-30 wow fadeInUp2 animated" data-wow-delay='.2s'>
-                                    <img class="mb-30" src="{% static 'assets/img/category-icon/web-development.svg'%}" alt="">
-                                    <h4 class="sub-title mb-10"><a href="course-details.html">Development</a></h4>
-                                    <p>325+ Courses Available</p>
+                                    <img class="mb-30" src="{{ sec.icon2.url }}" alt="">
+                                    <h4 class="sub-title mb-10"><a href="course-details.html">{{sec.titlecard2}}</a></h4>
+                                    <p>{{sec.desccard2}}</p>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="single-category text-center mb-30 wow fadeInUp2 animated" data-wow-delay='.3s'>
-                                    <img class="mb-30" src="{% static 'assets/img/category-icon/atom.svg'%}" alt="">
-                                    <h4 class="sub-title mb-10"><a href="course-details.html">Science</a></h4>
-                                    <p>95+ Courses Available</p>
+                                    <img class="mb-30" src="{{ sec.icon3.url }}" alt="">
+                                    <h4 class="sub-title mb-10"><a href="course-details.html">{{sec.titlecard3}}</a></h4>
+                                    <p>{{sec.desccard3}}</p>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="single-category text-center mb-30 wow fadeInUp2 animated" data-wow-delay='.4s'>
-                                    <img class="mb-30" src="{% static 'assets/img/category-icon/career-path.svg'%}" alt="">
-                                    <h4 class="sub-title mb-10"><a href="course-details.html">Career</a></h4>
-                                    <p>156+ Courses Available</p>
+                                    <img class="mb-30" src="{{ sec.icon4.url }}" alt="">
+                                    <h4 class="sub-title mb-10"><a href="course-details.html">{{sec.titlecard4}}</a></h4>
+                                    <p>{{sec.desccard4}}</p>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="single-category text-center mb-30 wow fadeInUp2 animated" data-wow-delay='.5s'>
-                                    <img class="mb-30" src="{% static 'assets/img/category-icon/graphic-tool.svg'%}" alt="">
-                                    <h4 class="sub-title mb-10"><a href="course-details.html">Arts & Design</a></h4>
-                                    <p>136+ Courses Available</p>
+                                    <img class="mb-30" src="{{ sec.icon5.url }}" alt="">
+                                    <h4 class="sub-title mb-10"><a href="course-details.html">{{sec.titlecard5}}</a></h4>
+                                    <p>{{sec.desccard5}}</p>
                                 </div>
                             </div>
                         </div>
                         <div class="row justify-content-center">
                             <div class="col-md-12 mt-20 text-center mb-20 wow fadeInUp2 animated" data-wow-delay='.6s'>
-                                <a href="courses.html" class="theme_btn">All Categories</a>
+                                <a href="courses.html" class="theme_btn">Barcha xizmatlar</a>
                             </div>
                         </div>
                     </div>
@@ -293,7 +293,8 @@
        </section>
        <!--what-loking-for end-->
         <!-- case-gallery start -->
-        <section class="feature-course pt-150 pb-130 pt-md-95 pb-md-80 pt-xs-95 pb-xs-80">
+        
+        <!-- <section class="feature-course pt-150 pb-130 pt-md-95 pb-md-80 pt-xs-95 pb-xs-80">
             <div class="container">
                 <div class="row">
                    <div class="col-xl-12">
@@ -306,7 +307,7 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-12 text-center">
                         <div class="portfolio-menu mb-30">
-                            <button class="gf_btn active" data-filter='*'>All</button>
+                            <button class="gf_btn active" data-filter='*'>Barchasi</button>
                             <button class="gf_btn" data-filter='.cat1'>Career</button>
                             <button class="gf_btn" data-filter='.cat2'>Development</button>
                             <button class="gf_btn" data-filter='.cat3'>Business</button>
@@ -329,7 +330,7 @@
                                     <span>Lab</span>
                                     <a class="f-right" href="instructor-details.html"><img src="{% static 'assets/img/course/in1.png'%}" alt=""></a>
                                 </div>
-                                <h4 class="sub-title mb-20"><a href="course-details.html">Take Your Career to the Next Level Future</a></h4>
+                                <h4 class="sub-title mb-20"><a href="course-details.html">1</a></h4>
                                 <div class="course__meta">
                                     <span><img class="icon" src="{% static 'assets/img/icon/time.svg'%}" alt="course-meta"> 12 Class</span>
                                     <span><img class="icon" src="{% static 'assets/img/icon/bar-chart.svg'%}" alt="course-meta"> Higher</span>
@@ -352,7 +353,7 @@
                                     <span>Lab</span>
                                     <a class="f-right" href="instructor-details.html"><img src="{% static 'assets/img/course/in2.png'%}" alt=""></a>
                                 </div>
-                                <h4 class="sub-title mb-20"><a href="course-details.html">Your Career to build for the pro level</a></h4>
+                                <h4 class="sub-title mb-20"><a href="course-details.html">2</a></h4>
                                 <div class="course__meta">
                                     <span><img class="icon" src="{% static 'assets/img/icon/time.svg'%}" alt="course-meta"> 12 Class</span>
                                     <span><img class="icon" src="{% static 'assets/img/icon/bar-chart.svg'%}" alt="course-meta"> Higher</span>
@@ -375,7 +376,7 @@
                                     <span>Lab</span>
                                     <a class="f-right" href="instructor-details.html"><img src="{% static 'assets/img/course/in3.png'%}" alt=""></a>
                                 </div>
-                                <h4 class="sub-title mb-20"><a href="course-details.html">Take A Course For You Biright Future</a></h4>
+                                <h4 class="sub-title mb-20"><a href="course-details.html">3</a></h4>
                                 <div class="course__meta">
                                     <span><img class="icon" src="{% static 'assets/img/icon/time.svg'%}" alt="course-meta"> 12 Class</span>
                                     <span><img class="icon" src="{% static 'assets/img/icon/bar-chart.svg'%}" alt="course-meta"> Higher</span>
@@ -398,7 +399,7 @@
                                     <span>Lab</span>
                                     <a class="f-right" href="instructor-details.html"><img src="{% static 'assets/img/course/in4.png'%}" alt=""></a>
                                 </div>
-                                <h4 class="sub-title mb-20"><a href="course-details.html">Take Your Career to the Next Level Future</a></h4>
+                                <h4 class="sub-title mb-20"><a href="course-details.html">4</a></h4>
                                 <div class="course__meta">
                                     <span><img class="icon" src="{% static 'assets/img/icon/time.svg'%}" alt="course-meta"> 12 Class</span>
                                     <span><img class="icon" src="{% static 'assets/img/icon/bar-chart.svg'%}" alt="course-meta"> Higher</span>
@@ -421,7 +422,7 @@
                                     <span>Lab</span>
                                     <a class="f-right" href="instructor-details.html"><img src="{% static 'assets/img/course/in5.png'%}" alt=""></a>
                                 </div>
-                                <h4 class="sub-title mb-20"><a href="course-details.html">Your Career to build for the pro level</a></h4>
+                                <h4 class="sub-title mb-20"><a href="course-details.html">5</a></h4>
                                 <div class="course__meta">
                                     <span><img class="icon" src="{% static 'assets/img/icon/time.svg'%}" alt="course-meta"> 12 Class</span>
                                     <span><img class="icon" src="{% static 'assets/img/icon/bar-chart.svg'%}" alt="course-meta"> Higher</span>
@@ -444,7 +445,7 @@
                                     <span>Lab</span>
                                     <a class="f-right" href="instructor-details.html"><img src="{% static 'assets/img/course/in6.png'%}" alt=""></a>
                                 </div>
-                                <h4 class="sub-title mb-20"><a href="course-details.html">Take A Course For You Biright Future</a></h4>
+                                <h4 class="sub-title mb-20"><a href="course-details.html">6</a></h4>
                                 <div class="course__meta">
                                     <span><img class="icon" src="{% static 'assets/img/icon/time.svg'%}" alt="course-meta"> 12 Class</span>
                                     <span><img class="icon" src="{% static 'assets/img/icon/bar-chart.svg'%}" alt="course-meta"> Higher</span>
@@ -461,8 +462,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- case-gallery end -->
+
         <!-- why-chose-section-wrapper start -->
         <div class="why-chose-section-wrapper gradient-bg mr-100 ml-100">
             <!-- why-chose-us start -->
@@ -495,16 +497,16 @@
                             <div class="col-xl-5 col-lg-5">
                                 <div class="chose-wrapper pl-25 pl-lg-0 pl-md-0 pl-xs-0">
                                     <div class="section-title mb-30 wow fadeInUp2 animated" data-wow-delay='.1s'>
-                                        <h5 class="bottom-line mb-25">Explore Zoomy</h5>
-                                        <h2 class="mb-25">Why Choose Zoomy?</h2>
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form. There are many variations of passages of Lorem Ipsum available.</p>
+                                        <h5 class="bottom-line mb-25">{{sec6.sarlavha_asosiy}}</h5>
+                                        <h2 class="mb-25">{{sec6.sarlavha_texti}}</h2>
+                                        <p>{{sec6.sarlavha_malumoti}}</p>
                                     </div>
                                     <ul class="text-list mb-40 wow fadeInUp2 animated" data-wow-delay='.2s'>
-                                        <li>There are many variations of passages of Lorem Ipsum.</li>
-                                        <li>The majority have suffered alteration in some form. </li>
-                                        <li>There are many variations of passages of Lorem Ipsum.</li>
+                                        <li>{{sec6.desc_1}}</li>
+                                        <li>{{sec6.desc_2}}</li>
+                                        <li>{{sec6.desc_3}}</li>
                                     </ul>
-                                    <a href="about.html" class="theme_btn wow fadeInUp2 animated" data-wow-delay='.3s'>More Details</a>
+                                    <a href="about.html" class="theme_btn wow fadeInUp2 animated" data-wow-delay='.3s'>Batafsil</a>
                                 </div>
                             </div>
                         </div>
