@@ -79,6 +79,8 @@ class Sectioninfor4(models.Model):
         icon5 = models.ImageField(upload_to = "icon",blank=True)
         titlecard5 = models.CharField("5-card sarlavhasi",max_length=70)
         desccard5 = models.CharField("5-card matni",max_length=70)
+        sdfasf = models.CharField(max_length=100)
+        sadadafdsg = models.TextField()
 
 class Zaybal_section(models.Model):
         sarlavxaaa = models.CharField(max_length=100)
